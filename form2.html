@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Preferences Survey</title>
+</head>
+<body style="background-color: #f0f8ff;">
+
+    <h2>Travel Preferences Survey</h2>
+    <label for="traveler-name">Your Name:</label>
+    <input type="text" id="traveler-name" name="traveler-name" placeholder="Enter your name"><br><br>
+    <fieldset>
+        <legend>What type of traveler are you?</legend>
+        <label><input type="radio" name="travel-type" value="adventure"> Adventure Seeker</label>
+        <label><input type="radio" name="travel-type" value="relaxation"> Relaxation Enthusiast</label>
+        <label><input type="radio" name="travel-type" value="culture"> Culture Explorer</label>
+    </fieldset><br>
+    <fieldset>
+        <legend>Which activities interest you the most?</legend>
+        <label><input type="checkbox" name="activities" value="hiking"> Hiking</label><br>
+        <label><input type="checkbox" name="activities" value="snorkeling"> Snorkeling</label><br>
+        <label><input type="checkbox" name="activities" value="sightseeing"> Sightseeing</label><br>
+        <label><input type="checkbox" name="activities" value="food-tours"> Food Tours</label><br>
+    </fieldset><br>
+    <label for="destination">Preferred Destination:</label><br>
+    <select id="destination" name="destination">
+        <option value="beach">Beach</option>
+        <option value="mountains">Mountains</option>
+        <option value="city">City</option>
+        <option value="forest">Forest</option>
+        <option value="island">Island</option>
+    </select><br><br>
+    <label for="travel-experience">Share your most memorable travel experience:</label><br>
+    <textarea id="travel-experience" name="travel-experience" rows="5" placeholder="Tell us about your favorite trip"></textarea><br><br>
+    <label for="cuisine">Favorite Cuisine:</label><br>
+    <input list="cuisine-options" id="cuisine" name="cuisine" placeholder="Choose a cuisine"><br>
+    <datalist id="cuisine-options">
+        <option value="Italian">
+        <option value="Mexican">
+        <option value="Thai">
+        <option value="Indian">
+        <option value="Japanese">
+    </datalist><br><br>
+    <button type="submit">Submit Survey</button>
+</body>
+</html>

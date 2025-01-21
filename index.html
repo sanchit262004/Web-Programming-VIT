@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A personal website to showcase my projects, blog, and contact details.">
+    <title>My Personal Website</title>
+    <style>
+        /* General Reset and Body Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Helvetica Neue', sans-serif;
+            line-height: 1.6;
+            background-color: #fafafa;
+            color: #333;
+        }
+
+        /* Header Styles */
+        header {
+            background: linear-gradient(45deg, #ff6f61, #f7a3b1);
+            padding: 40px 20px;
+            color: white;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.2em;
+        }
+
+        /* Navigation Bar */
+        nav {
+            background-color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 10px 0;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 12px 20px;
+            text-transform: uppercase;
+            font-weight: bold;
+            margin: 0 15px;
+            transition: background-color 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: #555;
+        }
+
+        /* Main Content Area */
+        .container {
+            padding: 40px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* Home Section */
+        #home {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        #home h2 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            color: #ff6f61;
+        }
+
+        #home p {
+            font-size: 1.1em;
+            color: #555;
+        }
+
+        /* Activities Section */
+        #activities {
+            margin-top: 50px;
+        }
+
+        #activities h2 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            color: #4CAF50;
+        }
+
+        #activities ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        #activities ul li {
+            font-size: 1.1em;
+            margin: 10px 0;
+        }
+
+        #activities ul li a {
+            color: #4CAF50;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        #activities ul li a:hover {
+            color: #333;
+        }
+
+        /* Blog Section */
+        #blog {
+            margin-top: 50px;
+        }
+
+        #blog h2 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            color: #f7a3b1;
+        }
+
+        .blog-posts {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .blog-post {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        .blog-post img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .blog-post .content {
+            padding: 20px;
+        }
+
+        .blog-post h3 {
+            font-size: 1.8em;
+            color: #333;
+        }
+
+        .blog-post p {
+            font-size: 1em;
+            color: #777;
+        }
+
+        .blog-post a {
+            color: #ff6f61;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 10px;
+            display: inline-block;
+        }
+
+        /* Contact Us Section (Footer) */
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        footer h2 {
+            font-size: 2.2em;
+            margin-bottom: 20px;
+        }
+
+        footer form {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        footer form input,
+        footer form textarea {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+            font-size: 1em;
+        }
+
+        footer form button {
+            background-color: #ff6f61;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 1.1em;
+            transition: background-color 0.3s;
+        }
+
+        footer form button:hover {
+            background-color: #f7a3b1;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>My Personal Website</h1>
+        <p>Welcome to my online space where I share my passions, projects, and ideas!</p>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#activities">Activities</a>
+        <a href="#blog">Blog</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="container">
+        <h2>Welcome!</h2>
+        <p>Welcome to my personal website. I’m passionate about web development, design, and sharing knowledge with others. On this site, you’ll find my latest blog posts, my ongoing projects, and a way to get in touch with me.</p>
+    </section>
+
+    <!-- Activities Section -->
+    <section id="activities" class="container">
+        <h2>My Activities</h2>
+        <ul>
+            <li><a href="home.html">Assignment 1A: Activity 1</a></li>
+            <li><a href="list.html">Assignment 1A: Activity 2</a></li>
+            <li><a href="table.html">Assignment 1A: Activity 3</a></li>
+            <li><a href="Assignment 1B 23BCE0241 (3).pdf">Assignment 1B: Activity 4</a></li>
+            <li><a href="table.html">Assignment 1B: Activity 5</a></li>
+            <li><a href="signin.html">Assignment 1C: Activity 6</a></li>
+            <li><a href="form2.html">Assignment 1C: Activity 7</a></li>
+            <li><a href="index.html">Assignment 1C: Activity 8</a></li>
+            <li><a href="Activity9.html">Assignment 2A: Activity 9</a></li>
+            <li><a href="Activity10.html">Assignment 2A: Activity 10</a></li>
+            <li><a href="Activity11.html">Assignment 2B: Activity 11</a></li>
+            <li><a href="Activity12.html">Assignment 2B: Activity 12</a></li>
+        </ul>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog" class="container">
+        <h2>Blog Posts</h2>
+        
+    </section>
+
+    <!-- Contact Section (Footer) -->
+    <footer id="contact">
+        <h2>Contact Me</h2>
+        <form action="#" method="POST">
+            <input type="text" id="name" name="name" placeholder="Your Name" required>
+            <input type="email" id="email" name="email" placeholder="Your Email" required>
+            <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </footer>
+
+</body>
+</html>
+``
